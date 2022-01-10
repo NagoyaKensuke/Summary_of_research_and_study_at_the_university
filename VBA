@@ -1,0 +1,18 @@
+'VBAの備忘録
+
+Sub answer()
+ans = WorksheetFunction.Sum(Range("A3：A102"))
+ 
+
+If ans >= 5000 Then
+    
+    MsgBox "合計値は5千以上です"
+       
+ElseIf ans < 5000 Then
+    MsgBox "合計値は5千より小さいです"
+        
+Else
+    MsgBox "不正な値です"
+    End If
+
+End Sub
